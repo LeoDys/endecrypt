@@ -1,6 +1,5 @@
-package com.dongang.endecrypt.util;
+package ens.util;
 
-import com.dongang.endecrypt.constant.EncryptConstant;
 
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
@@ -11,6 +10,8 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
+
+import ens.constant.EncryptConstant;
 
 /**
  * 3DES加密

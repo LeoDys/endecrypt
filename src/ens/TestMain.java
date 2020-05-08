@@ -1,8 +1,9 @@
-package com.dongang.endecrypt;
+package ens;
 
-import com.dongang.endecrypt.util.*;
 
 import java.util.Map;
+
+import ens.util.*;
 
 /**
  * 测试类

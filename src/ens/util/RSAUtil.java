@@ -1,4 +1,4 @@
-package com.dongang.endecrypt.util;
+package ens.util;
 
 import java.security.*;
 import java.security.interfaces.RSAPrivateKey;

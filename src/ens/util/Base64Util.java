@@ -1,7 +1,7 @@
-package com.dongang.endecrypt.util;
+package ens.util;
 
-import com.dongang.endecrypt.constant.EncryptConstant;
 
+import ens.constant.EncryptConstant;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 

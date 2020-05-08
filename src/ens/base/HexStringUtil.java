@@ -1,6 +1,7 @@
-package com.dongang.endecrypt.base;
+package ens.base;
 
-import com.dongang.endecrypt.constant.EncryptConstant;
+
+import ens.constant.EncryptConstant;
 
 /**
  * 十六进制加密\解密

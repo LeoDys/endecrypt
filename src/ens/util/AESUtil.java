@@ -1,7 +1,8 @@
-package com.dongang.endecrypt.util;
+package ens.util;
 
-import com.dongang.endecrypt.base.HexStringUtil;
-import com.dongang.endecrypt.base.Util;
+
+import ens.base.HexStringUtil;
+import ens.base.Util;
 
 /**
  * @author LeoDys E-mail:changwen.sun@inossem.com 2020/4/23 11:04

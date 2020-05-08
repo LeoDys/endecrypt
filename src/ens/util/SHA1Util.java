@@ -1,8 +1,8 @@
-package com.dongang.endecrypt.util;
+package ens.util;
 
-import com.dongang.endecrypt.base.HexStringUtil;
-import com.dongang.endecrypt.base.Util;
-import com.dongang.endecrypt.constant.EncryptConstant;
+import ens.base.HexStringUtil;
+import ens.base.Util;
+import ens.constant.EncryptConstant;
 
 /**
  * SHA1加密

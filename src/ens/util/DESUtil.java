@@ -1,10 +1,10 @@
-package com.dongang.endecrypt.util;
-
-import com.dongang.endecrypt.base.HexStringUtil;
-import com.dongang.endecrypt.base.Util;
+package ens.util;
 
 import java.security.KeyFactory;
 import java.security.SecureRandom;
+
+import ens.base.HexStringUtil;
+import ens.base.Util;
 
 /**
  * DES加密\解密

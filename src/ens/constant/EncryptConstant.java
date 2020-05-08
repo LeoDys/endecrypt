@@ -1,4 +1,4 @@
-package com.dongang.endecrypt.constant;
+package ens.constant;
 
 /**
  * 加密解密相关

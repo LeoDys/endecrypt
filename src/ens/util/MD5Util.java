@@ -1,8 +1,5 @@
-package com.dongang.endecrypt.util;
+package ens.util;
 
-import com.dongang.endecrypt.base.HexStringUtil;
-import com.dongang.endecrypt.base.Util;
-import com.dongang.endecrypt.constant.EncryptConstant;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,6 +7,10 @@ import java.io.IOException;
 import java.security.DigestInputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+
+import ens.base.HexStringUtil;
+import ens.base.Util;
+import ens.constant.EncryptConstant;
 
 /**
  * MD5加密

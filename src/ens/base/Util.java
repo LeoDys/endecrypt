@@ -1,4 +1,4 @@
-package com.dongang.endecrypt.base;
+package ens.base;
 
 import com.sun.istack.internal.Nullable;
 
