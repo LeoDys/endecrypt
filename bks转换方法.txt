@@ -1,0 +1,56 @@
+keytool -importkeystore -srckeystore mytruststore.jks -destkeystore mytruststore.bks -srcstoretype JKS -deststoretype BKS -srcstorepass changeit -deststorepass changeit -provider org.bouncycastle.jce.provider.BouncyCastleProvider 
+
+keytool -importkeystore -srckeystore mytruststore.jks -destkeystore mytruststore.bks -srcstoretype JKS -deststoretype BKS -srcstorepass changeit -deststorepass changeit -provider org.bouncycastle.jce.provider.BouncyCastleProvider 
+
+keytool -storepass 123456 -genkeypair -keyalg RSA -keysize 1024 -sigalg SHA1withRSA -validity 3650 -alias test -keystore test.keystore -dname "CN=www.inossem.com, OU=inossem, O=inossem, L=SY, ST=SY, C=CN"
+
+
+keytool -importcert -trustcacerts -keystore c:\test_key.bks -file c:\test.keystore -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider
+
+keytool -importcert -v -trustcacerts -file "keystore.cer" -alias test -keystore "keystore.bks" -provider org.bouncycastle.jce.provider.BouncyCastleProvider -providerpath "bcprov-jdk15on-155.jar" -storetype BKS -storepass storepassword123
+
+Microsoft Windows [版本 10.0.18363.1198]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\Users\wen40>keytool -importcert -trustcacerts -keystore c:\test_key.bks -file c:\test.keystore -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider
+输入密钥库口令:
+再次输入新口令:
+keytool 错误: java.lang.Exception: 所输入的不是 X.509 证书
+
+C:\Users\wen40>keytool -export -alias default -keystore c:\test.keystore -rfc -file c:\csii.cer
+输入密钥库口令:
+keytool 错误: java.lang.Exception: 别名 <default> 不存在
+
+C:\Users\wen40>keytool -export -alias test -keystore c:\test.keystore -rfc -file c:\csii.cer
+输入密钥库口令:
+存储在文件 <c:\csii.cer> 中的证书
+
+C:\Users\wen40>keytool -importcert -trustcacerts -keystore c:\test_key.bks -file c:\csii.cer -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider
+输入密钥库口令:
+再次输入新口令:
+所有者: CN=www.inossem.com, OU=inossem, O=inossem, L=SY, ST=SY, C=CN
+发布者: CN=www.inossem.com, OU=inossem, O=inossem, L=SY, ST=SY, C=CN
+序列号: d8ca96a666c7d096
+有效期为 Wed Jun 10 19:28:46 CST 2020 至 Sat Jun 08 19:28:46 CST 2030
+证书指纹:
+         MD5:  E3:18:59:A2:37:57:22:29:3C:B8:22:91:E6:7E:ED:80
+         SHA1: A9:7A:49:CE:D2:8B:0C:68:C5:11:03:A4:63:72:8A:21:E7:F0:06:47
+         SHA256: 63:F2:91:C2:16:6E:80:73:CD:A1:F6:80:DB:7D:42:8C:A3:8F:96:F8:50:9D:BA:E6:B1:61:EF:95:79:CC:28:66
+签名算法名称: SHA1withRSA
+主体公共密钥算法: 1024 位 RSA 密钥
+版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 14 C4 18 B6 98 39 E6 BD   84 3A 83 AE BF 15 2D A5  .....9...:....-.
+0010: 98 09 69 D7                                        ..i.
+]
+]
+
+是否信任此证书? [否]:  Y
+证书已添加到密钥库中
+
+C:\Users\wen40>
